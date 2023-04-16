@@ -1,5 +1,6 @@
-var user = "this is my first practice in JavaScript"
-var User = "This my third step"
-alert (user)
-// alert(User)
-// alert("This the last one from the first session")
+var Name = "Amir";
+var Age = 21;
+var Hieght = 1.73;
+var Male = true;
+var Email = null;
+var City = "";
