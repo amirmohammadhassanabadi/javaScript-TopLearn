@@ -1,10 +1,10 @@
-var information = ["AmirMohammad", "HasanAbadi", 21, 1.73, true, null, ""];
-// alert(information[2]);
-var Data = new Array("AmirMohammad", "HasanAbadi", 21, 1.73, true, null, "");
-alert(Data[3]);
+var City= "Oslo" , Country = "Norway" , Continent = "Europe";
+alert(Country);
 
- document.write(information.sort());
-// alert(information[2]);
-// console.log(information.sort());
- document.write("<hr>");
-document.write("Wellcome " + information[3]);
+function test(x , y , z){
+    return( x / y + z)
+}
+var s = 20;
+var k = 30;
+
+document.getElementById("resault").innerHTML = s + k;
