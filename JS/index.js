@@ -1,25 +1,19 @@
-var MyVar = "v1";
-var MyVar = "v2";
-var MyObject = {
-    MyVar: "v3",
-    MyFunc: function(){
-        return ("This Function is doing right: " + this.MyVar);
+function FormChecker() {
+    // var x = document.forms["Myform"]["input1"].value;
+    if (document.forms["Myform"]["input1"].value == "") {
+        return false
     }
 }
-console.log(this.MyVar);
-console.log(this);
-var x = this;
-console.log(x);
-document.write(this);
-// ======================================================
-const y = new Array ("amir" , 17);
-
-y.push("Hasanabadi")
-console.log(y)
-const z = {
-    Name: "Amir",
-    Age: 21
+function FormChecker() {
+    return false;
 }
-z.Family = "Hasanabadi";
-z.Name = "Amirmohammad";
-console.log(z);
+
+function objectmaker(Name, Family, Age) {
+    this.Name = Name;
+    this.Family = Family;
+    this.Age = Age;
+}
+var x = new objectmaker("Amir", "Hasanabadi", 17);
+console.log(x);
+const y = { brand: "BMW", model: "730li", price: "100,000$" }
+console.log(y);
