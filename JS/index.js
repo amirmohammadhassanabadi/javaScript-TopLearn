@@ -1,23 +1,30 @@
 function x(a, b) {
+    if (a === undefined) {
+        a = 1;
+    }
+    if (b === undefined) {
+        b = 2;
+    }
     return a + b;
 }
-console.log(x(20, 30));
+console.log(x());
 
-var y = function (a, b) {
+function y(a = 1, b = 2) {
     return a + b;
 }
-console.log(y(10, 30));
+console.log(y(5));
 
-var z = new Function("a", "b", "return a+b");
-console.log(z(6, 7));
+function z() {
+    for (var i = 0; i < arguments.length; i++) {
+        console.log(arguments[i]);
+    }
+};
+z("amir", "mina", "reza");
 
-(function () {
-    document.write("Functoin 2");
-})();
-// -------------------------------
-// 5)
-// var x = (a, b) => a * b;
-// function x(a, b) {
-//     return a * b;
-// }
-// alert(x(5, 8));
+function k() {
+    function m(a, b) {
+        return a + b;
+    };
+    console.log(m(3,6));
+}
+k();
