@@ -1,19 +1,23 @@
-function FormChecker() {
-    // var x = document.forms["Myform"]["input1"].value;
-    if (document.forms["Myform"]["input1"].value == "") {
-        return false
-    }
+function x(a, b) {
+    return a + b;
 }
-function FormChecker() {
-    return false;
-}
+console.log(x(20, 30));
 
-function objectmaker(Name, Family, Age) {
-    this.Name = Name;
-    this.Family = Family;
-    this.Age = Age;
+var y = function (a, b) {
+    return a + b;
 }
-var x = new objectmaker("Amir", "Hasanabadi", 17);
-console.log(x);
-const y = { brand: "BMW", model: "730li", price: "100,000$" }
-console.log(y);
+console.log(y(10, 30));
+
+var z = new Function("a", "b", "return a+b");
+console.log(z(6, 7));
+
+(function () {
+    document.write("Functoin 2");
+})();
+// -------------------------------
+// 5)
+// var x = (a, b) => a * b;
+// function x(a, b) {
+//     return a * b;
+// }
+// alert(x(5, 8));
