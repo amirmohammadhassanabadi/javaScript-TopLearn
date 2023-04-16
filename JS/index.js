@@ -1,21 +1,25 @@
-var x = 10
-try {
-    console.log(x);
+var MyVar = "v1";
+var MyVar = "v2";
+var MyObject = {
+    MyVar: "v3",
+    MyFunc: function(){
+        return ("This Function is doing right: " + this.MyVar);
+    }
 }
-catch (Error) {
-    document.write(Error.message);
-}
-finally {
-    console.log("Contact us");
-}
+console.log(this.MyVar);
+console.log(this);
+var x = this;
+console.log(x);
+document.write(this);
+// ======================================================
+const y = new Array ("amir" , 17);
 
-var x = "amir";
-try{
-    if(x=="amir") throw "Dear User You Are Banned"
+y.push("Hasanabadi")
+console.log(y)
+const z = {
+    Name: "Amir",
+    Age: 21
 }
-catch(MyErr){
-    document.write("Error ' Cause: " + MyErr );
-}
-finally{
-    console.log("Contact Us");
-}
+z.Family = "Hasanabadi";
+z.Name = "Amirmohammad";
+console.log(z);
