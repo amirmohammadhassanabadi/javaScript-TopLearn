@@ -1,33 +1,21 @@
-for(var i = 0; i<=10; i++){
-    document.write(i + "<br>");
-    if(i===7){
-        break;
-    }
+var x = 10
+try {
+    console.log(x);
+}
+catch (Error) {
+    document.write(Error.message);
+}
+finally {
+    console.log("Contact us");
 }
 
-document.write("<hr>")
-
-for(var i = 0; i<=10; i++){
-    if(i===7){
-        break;
-    }
-    document.write(i + "<br>");
+var x = "amir";
+try{
+    if(x=="amir") throw "Dear User You Are Banned"
 }
-
-document.write("<hr>")
-
-for(var i = 0; i<=10; i++){
-    if(i===7){
-        continue;
-    }
-    document.write(i + "<br>");
+catch(MyErr){
+    document.write("Error ' Cause: " + MyErr );
 }
-
-document.write("<hr>")
-
-for(var i = 0; i<=10; i++){
-    document.write(i + "<br>");
-    if(i===7){
-        continue;
-    }
+finally{
+    console.log("Contact Us");
 }
