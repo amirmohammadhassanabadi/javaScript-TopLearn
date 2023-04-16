@@ -1,30 +1,9 @@
-function x(a, b) {
-    if (a === undefined) {
-        a = 1;
-    }
-    if (b === undefined) {
-        b = 2;
-    }
-    return a + b;
-}
-console.log(x());
+document.getElementById("P-1").innerHTML = "JavaScript DOM";
 
-function y(a = 1, b = 2) {
-    return a + b;
-}
-console.log(y(5));
+document.getElementsByClassName("head")[0].innerHTML = "JavaScript DOM";
 
-function z() {
-    for (var i = 0; i < arguments.length; i++) {
-        console.log(arguments[i]);
-    }
-};
-z("amir", "mina", "reza");
+document.getElementsByTagName("h3")[2].innerHTML = "JavaScript DOM";
 
-function k() {
-    function m(a, b) {
-        return a + b;
-    };
-    console.log(m(3,6));
-}
-k();
+document.getElementsByName("text")[0].innerHTML = "JavaScript DOM";
+
+document.querySelectorAll("h3.test")[0].innerHTML = "JavaScript DOM";
