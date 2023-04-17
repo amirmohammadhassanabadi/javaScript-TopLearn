@@ -1,8 +1,13 @@
-var x = document.getElementById("box-1")
-function clicked() { x.innerHTML = "clicked" }
-function DBLclicked() { x.innerHTML = "Double clicked" }
-function Mout() { x.innerHTML = "You're out" }
-function Mover() { x.innerHTML = "Hovered" }
-var y = document.getElementById("box-2")
-function Mdown() { y.innerHTML = "Mouse Down" }
-function Mup() { y.innerHTML = "Mouse Up" }
+var x = document.getElementById("btn");
+x.addEventListener("click", clickchecker1);
+x.addEventListener("click", clickchecker2);
+x.addEventListener("click", clickchecker3);
+function clickchecker1() {
+    alert("You clicked once");
+}
+function clickchecker2() {
+    alert("Second click");
+}
+function clickchecker3() {
+    alert("Third click");
+}
