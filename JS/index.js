@@ -1,13 +1,9 @@
-var x = document.getElementById("btn");
-x.addEventListener("click", clickchecker1);
-x.addEventListener("click", clickchecker2);
-x.addEventListener("click", clickchecker3);
-function clickchecker1() {
-    alert("You clicked once");
+document.getElementById("Demo-1").innerHTML = Math.random();
+function resize1() {
+    document.getElementById("Demo-2").innerHTML = window.innerWidth;
 }
-function clickchecker2() {
-    alert("Second click");
+window.addEventListener("resize", resize1);
+function resize2() {
+    document.getElementById("Demo-3").innerHTML = window.innerHeight;
 }
-function clickchecker3() {
-    alert("Third click");
-}
+window.addEventListener("resize", resize2);
