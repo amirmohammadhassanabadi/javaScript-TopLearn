@@ -2,3 +2,26 @@ body {
     background-color: rgb(40, 40, 40);
     color: whitesmoke;
 }
+
+        #box-1 {
+            width: 300px;
+            color: aliceblue;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 1.5em;
+            padding: 70px 0;
+        }
+
+        #box-2 {
+            width: 300px;
+            background-color: salmon;
+            color: aliceblue;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 1.5em;
+            padding: 70px 0;
+        }
