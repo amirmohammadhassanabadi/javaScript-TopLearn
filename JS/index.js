@@ -1,16 +1,15 @@
-function animation() {
-    var animator = document.getElementById("myAnimate");
-    var start = 0;
-    var left = 0;
-    var animate = setInterval(go, 5);
-    function go() {
-        if (start == 450) {
-            clearInterval(animate);
-        } else {
-            start++;
-            left++;
-            animator.style.top = start;
-            animator.style.left = left;
-        }
+// (function () {
+//     var animation = setInterval(move, 3000)
+//     function move() {
+//         document.getElementById("num-1").src = "./img/image-2.jpg"
+//         clearInterval(animation);
+//     }
+// })();
+
+(function () {
+    var animation = setInterval(show, 4000);
+    function show() {
+        document.getElementById("num-1").src = "./img/image-2.jpg";
+        clearInterval(animation);
     }
-}
+})();
