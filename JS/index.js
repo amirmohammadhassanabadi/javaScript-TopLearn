@@ -1,9 +1,7 @@
-document.getElementById("Demo-1").innerHTML = Math.random();
-function resize1() {
-    document.getElementById("Demo-2").innerHTML = window.innerWidth;
-}
-window.addEventListener("resize", resize1);
-function resize2() {
-    document.getElementById("Demo-3").innerHTML = window.innerHeight;
-}
-window.addEventListener("resize", resize2);
+var container = document.getElementById("container");
+var head4 = document.createElement("h1");
+var TXT = document.createTextNode("Python");
+var head2 = document.getElementById("head2");
+container.appendChild(head4);
+head4.appendChild(TXT);
+container.insertBefore(head4, head2);
