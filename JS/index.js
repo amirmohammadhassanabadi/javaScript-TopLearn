@@ -1,7 +1,8 @@
-function Multiplication(x,y) {
-return x + y;
+var change = function(){
+    document.getElementById("head").innerHTML = "Hello World"
 }
-console.log(Multiplication(20,30));
-// -----------------------------------------------------
-let Division = new Function("a" , "b" , "return a/b");
-console.log(Division(100, 5));
+change()
+document.getElementById("btn").onclick = function() {
+    document.getElementById("head").innerHTML = "Hello User";
+    document.getElementById("btn").innerHTML = "You Clicked";
+}
