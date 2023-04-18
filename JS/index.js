@@ -1,12 +1,9 @@
-var username = prompt("please tell us your name");
-var head = document.querySelector("h2");
-head.textContent = "you entered your name successfully";
-if(username == ""){
-    head.textContent = "try again";
-}
-if(username == " "){
-    head.textContent = "try again";
-}
-if(username = null){
-    head.textContent = "try again";
+let country = "Norway";
+let condition = true;
+let Num = 10;
+let place = "park";
+if ((country == "Norway" && condition == true) || (Num == 12 && place == "park")) {
+    console.log("you did right");
+} else {
+    console.log("it wasn't right");
 }
