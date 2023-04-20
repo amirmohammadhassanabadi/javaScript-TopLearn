@@ -1,32 +1,32 @@
-//data types
-let str = 'Amir';
-let number = 84;
-let gpa = 65.3;
-let bool = true;
-let myVar1 = null; //no value at all
-let myVar2 = undefined; //no value yet
+var Num1 = -10.348;
+var Num2 = 10.348;
+var Num3 = 10.848;
+function printD(x) {
+    document.write(x);
+}
 
-//document.write()
-document.write("<h2 class='text-danger'>This is by JS</h2>");
-document.write("<hr class='text-danger'>");
-
-var phrase = "Strings are cool";
-console.log(phrase);
-console.log(phrase.length);
-console.log(phrase.toUpperCase());
-console.log(phrase.toLocaleLowerCase());
-console.log(phrase.charAt(0));
-console.log(phrase.indexOf("o"));
-console.log(phrase.lastIndexOf("z"));
-console.log(phrase.substring(2,9));//from 2 to 8
-console.log(phrase.substring(phrase.indexOf("a"),phrase.length));
-console.log(phrase.substring(8,16));
-console.log(phrase.endsWith("d"));//false
-console.log(phrase.endsWith("cool"));//true
-console.log(phrase.includes("cool"));//true
-console.log(phrase.includes("z"));//false
-
-//Concatenation
-let str1 = "Amir";
-let str2=  "mohammad";
-document.write(str1 + " " + str2)
+printD(Num1);
+printD("<br>")
+printD(Math.abs(Num1));
+printD("<br>")
+printD(Math.max(Num1, 61));
+printD("<br>")
+printD(Math.min(Num1, 61));
+printD("<br>")
+printD(Math.round(Num2));
+printD("<br>")
+printD(Math.ceil(Num2));
+printD("<br>")
+printD(Math.floor(Num3));
+printD("<br>")
+printD(Math.pow(Num3, 2));
+printD("<br>")
+printD(Math.sqrt(Num3));
+printD("<br>")
+printD(Math.cbrt(Num3));
+printD("<br>")
+printD(Math.random() * 10);
+printD("<br>")
+printD(Math.round(Math.random() * 100));
+printD("<br>")
+printD(Math.sin(60));
