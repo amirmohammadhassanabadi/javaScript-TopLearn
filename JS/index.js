@@ -1,9 +1,21 @@
-let country = "Norway";
-let condition = true;
-let Num = 10;
-let place = "park";
-if ((country == "Norway" && condition == true) || (Num == 12 && place == "park")) {
-    console.log("you did right");
-} else {
-    console.log("it wasn't right");
+var Num = 10;
+switch (Num) {
+    case 1:
+        console.log("you choosed 1");
+        break;
+
+    case 2:
+        console.log("you choosed 2");
+        break;
+
+    case 3:
+        console.log("you choosed 3");
+        break;
+
+    case 4:
+        console.log("you choosed 4");
+        break;
+
+    default:
+        console.log("not a good choise");
 }
