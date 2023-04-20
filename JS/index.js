@@ -1,20 +1,8 @@
-// Array
-var Fruits = new Array("Apple" , "Cherry" , "Orange");
-var Fruits = ["Apple", "Cherry", "Orange"];
-Fruits[0] = "Watermelon";
-let Arrays = "Amir-Meyti-Hosein-Mamad-Ashkan";
-Arrays = Arrays.split("-");
-document.write(Fruits);
-document.write("<br>");
-console.log(Fruits.indexOf("Orange"));
-document.write(Fruits[1]);
-document.write("<br>");
-Fruits.push("Banana");
-Fruits.push("25");
-Fruits.sort();
-document.write(Fruits);
-document.write("<br>");
-console.log(typeof Fruits);
-document.write(Arrays);
-document.write("<br>");
-document.write(typeof Arrays);
+var title = document.querySelectorAll("h1");
+title[1].textContent = "Changed";
+var text = document.querySelectorAll("p.text");
+text[2].textContent = "Another";
+var par = document.getElementsByClassName("text");
+par[1].textContent = "second";
+let link = document.getElementsByTagName("a");
+link[2].textContent = "last";
