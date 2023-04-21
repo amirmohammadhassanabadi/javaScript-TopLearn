@@ -1,5 +1,9 @@
-let ul = document.querySelector("ul");
-let item3 = document.querySelectorAll("li")[2];
-let newItem = document.createElement("li");
-newItem.innerHTML = "Sake";
-ul.replaceChild(newItem, item3);
+let image = document.getElementById("image");
+image.addEventListener("mouseover", mOver);
+function mOver() {
+    image.style.border = "2px solid black";
+}
+image.addEventListener("mouseout", mOut);
+function mOut() {
+    image.style.border = "2px solid gray";
+}
