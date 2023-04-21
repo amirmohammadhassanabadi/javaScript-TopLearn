@@ -1,12 +1,16 @@
-let wrapper = document.getElementById("wrapper");
-let Car = {
-    Brand: "Ferrari",
-    Model: "Roma",
-    Price: "350,000$",
-    PrintInfo: function () {
-        console.log(this.Brand + " " + this.Model + ` is ${this.Price}`);
-        return `${this.Brand} ${this.Model} is ${this.Price}`
+var myArray = [
+    "Amirmohammad",
+    "Hasanabadi",
+    21,
+    "Programmer",
+    ["Orange", "Apple"],
+    [12, 75, 8],
+    "Student",
+    {
+        Number: 32,
+        Numbers: [10, 11, 12],
+        Num: 62,
+        Numb: 98
     }
-}
-
-wrapper.innerHTML = Car.PrintInfo()
+];
+console.log(myArray[7].Numbers[2]);
