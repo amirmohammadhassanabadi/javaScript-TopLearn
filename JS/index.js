@@ -1,16 +1,22 @@
-var Num = [
-    [1, [2, 3], 4],
-    [[5, 6, 7], 8, [9, 10]],
-    [11, 12, 13]
-]
-for (var i = 0; i < Num.length; i++) {
-    for (var j = 0; j < Num[i].length; j++) {
-        for (var k = 0; k < Num[i][j].length; k++) {
-            if (Num[i][j].length > 0) {
-                document.write(Num[i][j][k] + "<br>")
-            } else {
-                document.write(Num[i][j] + "<br>")
-            }
-        }
+let Friends = ["Emma", "Tom", "Nicole"];
+Friends.forEach(Friend);
+function Friend(item, index) {
+    document.write(index + " : " + item + "<br>");
+}
+
+var Books = [
+    {
+        Title: "Les Miserables",
+        Author: "Victor Hugo",
+        Pages: 1462
+    },
+    {
+        Title: "Crime and Punishment",
+        Author: "Fyodor Dostoevsky",
+        Pages: 576
     }
+]
+Books.forEach(myFunc);
+function myFunc(item) {
+    document.write("The title of the book is : " + item.Title + "and includes " + item.Pages + " pages " + "and is written by " + item.Author + "<br>");
 }
