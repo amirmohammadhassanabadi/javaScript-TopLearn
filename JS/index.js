@@ -1,16 +1,22 @@
-var myArray = [
-    "Amirmohammad",
-    "Hasanabadi",
-    21,
-    "Programmer",
-    ["Orange", "Apple"],
-    [12, 75, 8],
-    "Student",
+let Movie = {
+    Title: "Outlaw King",
+    InitialRelease: "September 6, 2018",
+    Director:{
+        FullName:"David Mackenzie",
+        BirthDay: "May 10, 1966",
+        Nationality: "Scottish"
+    },
+    Duration:"2h 17m",
+    Badget: "120 million USD",
+    Casts: [{
+        FullName:"Chris Pine",
+        BirthDay: "August 26, 1980",
+        Nationality: "American"
+    },
     {
-        Number: 32,
-        Numbers: [10, 11, 12],
-        Num: 62,
-        Numb: 98
-    }
-];
-console.log(myArray[7].Numbers[2]);
+        FullName:"Florence Pugh",
+        BirthDay: "January 3, 1996",
+        Nationality: "English"
+    }]
+}
+console.log(Movie.Casts[1].FullName);
