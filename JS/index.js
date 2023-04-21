@@ -1,10 +1,25 @@
-const fruits = ["Apple", "Banana", "Orange"];
-for (x of fruits) {
-    document.write(x + "<br>");
+var Questions = [
+    {
+        prompt: "Where is the capital of Netherlands?\n(a) Rotterdam\n(b) Amsterdam\n(c) Utrecht",
+        answer: "b"
+    },
+    {
+        prompt: "Where is the capital of Denmark?\n(a) Copenhagen\n(b) Aarhus\n(c) Aalborg",
+        answer: "a"
+    },
+    {
+        prompt: "Which one these cities isn't in South Africa?\n(a) Cape Town\n(b) Johannesburg\n(c) Cairo",
+        answer: "c"
+    }
+]
+var score = 0;
+for (var i = 0; i < Questions.length; i++) {
+    let ask = prompt(Questions[i].prompt);
+    if (ask == Questions[i].answer) {
+        score++;
+        alert("Your answer was right")
+    } else {
+        alert("Your answer was not right")
+    }
 }
-// -----------------------------------------------------
-let i = 0;
-while (i < 10) {
-    document.write(i + "<br>");
-    i = i + 2;
-}
+alert("your score is : " + score + " of " + Questions.length);
