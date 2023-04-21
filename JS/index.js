@@ -1,9 +1,19 @@
-let image = document.getElementById("image");
-image.addEventListener("mouseover", mOver);
-function mOver() {
-    image.style.border = "2px solid black";
+let Btn = document.getElementById("btn");
+Btn.addEventListener("mouseover", hover);
+function hover() {
+    Btn.style.backgroundColor = "black";
+    Btn.style.color = "dodgerblue";
+    Btn.style.border = "0";
 }
-image.addEventListener("mouseout", mOut);
-function mOut() {
-    image.style.border = "2px solid gray";
+Btn.addEventListener("mouseout", BtnOut);
+function BtnOut() {
+    Btn.style.backgroundColor = "dodgerblue";
+    Btn.style.color = "black";
+    Btn.style.border = "0";
+}
+Btn.addEventListener("click", BtnClick);
+function BtnClick() {
+    Btn.style.backgroundColor = "salmon";
+    Btn.style.color = "white";
+    Btn.style.border = "0";
 }
