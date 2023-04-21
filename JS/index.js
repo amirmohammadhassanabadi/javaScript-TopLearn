@@ -1,22 +1,17 @@
-let Friends = ["Emma", "Tom", "Nicole"];
-Friends.forEach(Friend);
-function Friend(item, index) {
-    document.write(index + " : " + item + "<br>");
-}
+let buttom = document.getElementById("btn");
+buttom.addEventListener("click", Event1);
+function Event1() {
+    setTimeout(action, 3000);
+};
+function action() {
+    console.log("Hello");
+};
 
-var Books = [
-    {
-        Title: "Les Miserables",
-        Author: "Victor Hugo",
-        Pages: 1462
-    },
-    {
-        Title: "Crime and Punishment",
-        Author: "Fyodor Dostoevsky",
-        Pages: 576
-    }
-]
-Books.forEach(myFunc);
-function myFunc(item) {
-    document.write("The title of the book is : " + item.Title + "and includes " + item.Pages + " pages " + "and is written by " + item.Author + "<br>");
-}
+var Buttom = document.getElementById("btn");
+Buttom.addEventListener("click", myFunc);
+function myFunc() {
+    setInterval(action, 3000);
+};
+function action() {
+    console.log("Wellcome");
+};
