@@ -1,16 +1,12 @@
-let password = "Abcd1234"
-let guess;
-let counter = 0;
-let error = false;
-while (password != guess && error == false) {
-    if (counter < 3) {
-        guess = prompt("Please enter your password");
-        counter++;
-        if (password == guess) {
-            alert("you entered successfully")
-        }
-    } else {
-        alert("You're not allowed to enter for 2 hours");
-        error = true;
-    }
+var i = 0;
+while (i < 10) {
+    document.write(i + "<br>");
+    i++;
+}
+for (var i = 0; i < 10; i++) {
+    document.write(i + "<br>");
+}
+var Friends = ['Mamad', "Mina", "Sogol"];
+for (var i = 0; i < Friends.length; i++) {
+    document.write("Number " + (i + 1) + " " + "is " + Friends[i] + "<br>");
 }
