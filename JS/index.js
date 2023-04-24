@@ -1,17 +1,20 @@
-var open1 = document.getElementById("open");
-var close1 = document.getElementById("close");
-var assign1 = document.getElementById("assign");
-var reload1 = document.getElementById("reload");
-let myWindow;
-open1.onclick = function () {
-    myWindow = window.open("https://www.bmwusa.com/");
+var prev = document.getElementById("prev");
+var next = document.getElementById("next");
+prev.onclick = function () {
+    window.history.back();
 }
-close1.onclick = function () {
-    myWindow.close();
-}
-assign1.addEventListener("click", function () {
-    window.location.assign("https://www.bmwusa.com/");
-});
-reload1.onclick = function () {
-    window.location.reload();
+next.addEventListener("click", function () {
+    window.history.forward();
+})
+// -----------------------------------------------------------------------------
+// if (navigator.cookieEnabled) {
+//     alert("it is set");
+// } else {
+//     alert("it is not set");
+// }
+// -----------------------------------------------------------------------------
+if (confirm("Are you older than 18?")) {
+    alert("Wellcome");
+} else {
+    alert("You are not allowed");
 }
