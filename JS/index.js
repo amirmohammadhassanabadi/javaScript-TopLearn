@@ -1,17 +1,9 @@
-let buttom = document.getElementById("btn");
-buttom.addEventListener("click", Event1);
-function Event1() {
-    setTimeout(action, 3000);
-};
-function action() {
-    console.log("Hello");
-};
+let text2 = document.getElementById("text");
+text2.innerHTML = "w = " + screen.width + " , h = " + screen.height;
 
-var Buttom = document.getElementById("btn");
-Buttom.addEventListener("click", myFunc);
-function myFunc() {
-    setInterval(action, 3000);
-};
-function action() {
-    console.log("Wellcome");
-};
+window.onresize = function () {
+    let text = document.getElementById("Demo");
+    let Width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    let Height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    text.textContent = "Width is: " + Width + " , Height is: " + Height;
+}
