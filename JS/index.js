@@ -1,9 +1,17 @@
-let text2 = document.getElementById("text");
-text2.innerHTML = "w = " + screen.width + " , h = " + screen.height;
-
-window.onresize = function () {
-    let text = document.getElementById("Demo");
-    let Width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    let Height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-    text.textContent = "Width is: " + Width + " , Height is: " + Height;
+var open1 = document.getElementById("open");
+var close1 = document.getElementById("close");
+var assign1 = document.getElementById("assign");
+var reload1 = document.getElementById("reload");
+let myWindow;
+open1.onclick = function () {
+    myWindow = window.open("https://www.bmwusa.com/");
+}
+close1.onclick = function () {
+    myWindow.close();
+}
+assign1.addEventListener("click", function () {
+    window.location.assign("https://www.bmwusa.com/");
+});
+reload1.onclick = function () {
+    window.location.reload();
 }
