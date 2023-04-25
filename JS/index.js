@@ -1,9 +1,8 @@
-var Txt = document.getElementById("p2");
-console.log(Txt.nextSibling.nextSibling.innerHTML);
-console.log(Txt.nextElementSibling.innerHTML);
-console.log(Txt.previousElementSibling.innerHTML);
-
+var P = document.createElement("p");
+var txt = document.createTextNode("IT'S NEW");
 var Container = document.getElementById("container");
-console.log(Container.firstElementChild.innerHTML);
-console.log(Container.firstChild.innerHTML);
-console.log(Container.childNodes[0].innerHTML);
+P.appendChild(txt);
+document.body.appendChild(P);
+document.body.insertBefore(P, Container);
+document.body.removeChild(Container);
+Container.replaceChild(P, Container.firstElementChild);
