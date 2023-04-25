@@ -9,3 +9,9 @@ function action() {
 }
 action();
 console.log(carName);
+
+// Hoising
+x = 234;
+let p = document.getElementById("p1");
+p.innerHTML = x;
+var x;
