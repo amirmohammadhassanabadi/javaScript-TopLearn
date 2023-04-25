@@ -1,8 +1,14 @@
-var P = document.createElement("p");
-var txt = document.createTextNode("IT'S NEW");
-var Container = document.getElementById("container");
-P.appendChild(txt);
-document.body.appendChild(P);
-document.body.insertBefore(P, Container);
-document.body.removeChild(Container);
-Container.replaceChild(P, Container.firstElementChild);
+var x = "Amir", y = 12, z = "BMW";
+let country = "Finland", City = "Tokyo", Num = 34;
+
+var x = 24;
+console.log(x);
+let city = "Dubai";
+{
+    let c = "Li";
+}
+console.log(c);
+{
+    var d = 15;
+}
+console.log(d);
